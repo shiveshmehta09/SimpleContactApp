@@ -11,6 +11,4 @@
 /build
 /captures
 .externalNativeBuild
-.cxx
-/.idea/tasks.xml
-/.idea/vcs.xml
+
