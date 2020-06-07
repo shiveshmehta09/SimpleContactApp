@@ -13,8 +13,8 @@ import kotlinx.android.synthetic.main.item_contact.view.*
  * Created by Shivesh K Mehta on 07/06/20.
  * Version 2.0 KTX
  */
-class ContactsAdapter(context: Context, private var contactClickListener: OnContactClickListener?) : RecyclerView.Adapter<ContactsAdapter.ContactsViewHolder>() {
-    private lateinit var contactList: ArrayList<Contact>
+class ContactsAdapter(context: Context?, private var contactClickListener: OnContactClickListener?) : RecyclerView.Adapter<ContactsAdapter.ContactsViewHolder>() {
+    private var contactList: ArrayList<Contact>  = ArrayList()
 
     fun setData(contacts: ArrayList<Contact>) {
         contactList.clear()

@@ -7,5 +7,5 @@ import com.shivesh.simplecontactapp.thirtydaysofkotlin.models.Message
  * Version 2.0 KTX
  */
 interface MessageTaskListener {
-    fun onDataFetched(messages: List<Message>)
+    fun onDataFetched(messages: MutableList<Message>?)
 }

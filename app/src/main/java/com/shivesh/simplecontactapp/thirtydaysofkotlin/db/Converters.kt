@@ -7,8 +7,6 @@ import java.util.*
  * Created by Shivesh K Mehta on 07/06/20.
  * Version 2.0 KTX
  */
-
-// example converter for java.util.Date
 class Converters {
     @TypeConverter
     fun fromTimestamp(value: Long?): Date? {

@@ -14,7 +14,7 @@ import com.shivesh.simplecontactapp.thirtydaysofkotlin.models.Message
 interface MessageDao {
 
     @Query("SELECT * FROM $MESSAGE")
-    fun getMessage(): List<Message?>?
+    fun getMessage(): MutableList<Message>?
 
     @Insert
     fun insertMessage(message: Message?)

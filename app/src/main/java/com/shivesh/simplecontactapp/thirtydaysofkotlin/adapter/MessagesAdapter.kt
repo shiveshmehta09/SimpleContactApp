@@ -13,10 +13,13 @@ import kotlinx.android.synthetic.main.item_message.view.*
  * Created by Shivesh K Mehta on 07/06/20.
  * Version 2.0 KTX
  */
-class MessagesAdapter(context: Context) : RecyclerView.Adapter<MessagesAdapter.MessageViewHolder>() {
-    private lateinit var messagesList: ArrayList<Message>
+class MessagesAdapter(context: Context?) : RecyclerView.Adapter<MessagesAdapter.MessageViewHolder>() {
+    private var messagesList: ArrayList<Message> = ArrayList()
 
-    fun setData(messages: ArrayList<Message>) {
+    fun setData(messages: MutableList<Message>?) {
+        if(messages.isNullOrEmpty()){
+            return
+        }
         this.messagesList.clear()
         messagesList.addAll(messages)
         notifyDataSetChanged()
