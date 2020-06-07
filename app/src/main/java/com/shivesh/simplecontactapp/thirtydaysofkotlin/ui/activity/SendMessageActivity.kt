@@ -11,7 +11,6 @@ import com.shivesh.simplecontactapp.thirtydaysofkotlin.base.BaseActivity
 class SendMessageActivity : BaseActivity() {
     private var messageToSend = ""
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_send_messages)
